@@ -2,4 +2,4 @@ Welcome to my humble abode! I'm working on this right now, so things will be cha
 
 <img src="./readme/banner.svg" width="100%">
 
-Edit Tally: IIII
+Edit Tally: IIIII
