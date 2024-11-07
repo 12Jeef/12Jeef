@@ -1,3 +1,1 @@
-# 12Jeef
-
-Welcome to my humble abode!
+<img src="./readme/banner.svg">
