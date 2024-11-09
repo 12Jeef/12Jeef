@@ -1,4 +1,4 @@
-<a href="https://12jeef.github.io/"><img src="./readme/banner.svg" width="50%"></a>
+<a href="https://12jeef.github.io/"><img src="./readme/banner.svg" width="100%"></a>
 
 <div align="center">
     <a href="https://www.linkedin.com/in/jeffrey-fan-5b4769284/"><img src="https://img.shields.io/badge/LinkedIn-white?logo=linkedin&logoColor=black&style=for-the-badge"></a>
