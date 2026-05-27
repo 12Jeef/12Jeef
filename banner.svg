@@ -1,147 +1,147 @@
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="width: 100%;" height="200">
-    <foreignObject width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <style>
-                * {
-                    box-sizing: border-box;
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * {
+            box-sizing: border-box;
 
-                    color: inherit;
-                    font-family: monospace;
-                }
-                
-                .main {
-                    --color: #000;
+            color: inherit;
+            font-family: monospace;
+        }
+        
+        .main {
+            --color: #000;
 
-                    position: relative;
+            position: relative;
 
-                    width: 100%;
-                    height: 200px;
+            width: 100%;
+            height: 200px;
 
-                    color: var(--color);
+            color: var(--color);
 
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
-                }
-                @media (prefers-color-scheme: dark) {
-                    .main {
-                        --color: #fff;
-                    }
-                }
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        @media (prefers-color-scheme: dark) {
+            .main {
+                --color: #fff;
+            }
+        }
 
-                @keyframes content-enter {
-                    0% {
-                        gap: 0;
-                    }
-                    100% {
-                        gap: 0.5em;
-                    }
-                }
-                @keyframes crown-enter {
-                    0% {
-                        transform: scale(0.5);
+        @keyframes content-enter {
+            0% {
+                gap: 0;
+            }
+            100% {
+                gap: 0.5em;
+            }
+        }
+        @keyframes crown-enter {
+            0% {
+                transform: scale(0.5);
 
-                        margin-botom: -30px;
+                margin-botom: -30px;
 
-                        opacity: 0;
-                    }
-                    100% {
-                        transform: scale(1);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
 
-                        margin-botom: 0;
+                margin-botom: 0;
 
-                        opacity: 1;
-                    }
-                }
-                @keyframes text-enter {
-                    0% {
-                        transform: translateY(-0.5em) scale(0.5);
+                opacity: 1;
+            }
+        }
+        @keyframes text-enter {
+            0% {
+                transform: translateY(-0.5em) scale(0.5);
 
-                        opacity: 0;
-                    }
-                    100% {
-                        transform: translateY(0) scale(1);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0) scale(1);
 
-                        opacity: 1;
-                    }
-                }
+                opacity: 1;
+            }
+        }
 
-                .main::before {
-                    z-index: -1;
+        .main::before {
+            z-index: -1;
 
-                    content: "";
+            content: "";
 
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
 
-                    width: 400px;
-                    height: 200px;
+            width: 400px;
+            height: 200px;
 
-                    background: radial-gradient(closest-side ellipse at center, #1cff7711 0%, transparent 100%);
-                }
+            background: radial-gradient(closest-side ellipse at center, #1cff7711 0%, transparent 100%);
+        }
 
-                .main .content {
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
+        .main .content {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
 
-                    animation: content-enter 3s cubic-bezier(0.000, 1.015, 0.390, 0.890) 2s both;
-                }
+            animation: content-enter 3s cubic-bezier(0.000, 1.015, 0.390, 0.890) 2s both;
+        }
 
-                .main .content .crown {
-                    width: 30px;
-                    height: 20px;
+        .main .content .crown {
+            width: 30px;
+            height: 20px;
 
-                    background-color: var(--color);
-                    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 75% 33%, 50% 0, 25% 33%);
+            background-color: var(--color);
+            clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 75% 33%, 50% 0, 25% 33%);
 
-                    animation: crown-enter 3s cubic-bezier(0.000, 1.015, 0.390, 0.890) 2s both;
-                }
+            animation: crown-enter 3s cubic-bezier(0.000, 1.015, 0.390, 0.890) 2s both;
+        }
 
-                .main .content .text {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
+        .main .content .text {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
 
-                    text-transform: uppercase;
-                }
-                .main .content .text span {
-                    --i: 0;
+            text-transform: uppercase;
+        }
+        .main .content .text span {
+            --i: 0;
 
-                    display: inline-block;
+            display: inline-block;
 
-                    animation: text-enter 3s cubic-bezier(0.000, 1.015, 0.390, 0.890) calc(0.1s * var(--i)) both;
-                }
-                .main .content .text span:empty {
-                    width: 0.5em;
-                }
-            </style>
-            <div class="main">
-                <h1 class="content">
-                    <div class="crown"></div>
-                    <span class="text">
-<span style="--i:0;">H</span>
-<span style="--i:1;">i</span>
-<span style="--i:2;"></span>
-<span style="--i:3;">T</span>
-<span style="--i:4;">h</span>
-<span style="--i:5;">e</span>
-<span style="--i:6;">r</span>
-<span style="--i:7;">e</span>
-                    </span>
-                </h1>
-            </div>
-        </div>
-    </foreignObject>
+            animation: text-enter 3s cubic-bezier(0.000, 1.015, 0.390, 0.890) calc(0.1s * var(--i)) both;
+        }
+        .main .content .text span:empty {
+            width: 0.5em;
+        }
+      </style>
+      <div class="main">
+        <h1 class="content">
+          <div class="crown"></div>
+          <span class="text">
+            <span style="--i:0;">H</span>
+            <span style="--i:1;">i</span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;">T</span>
+            <span style="--i:4;">h</span>
+            <span style="--i:5;">e</span>
+            <span style="--i:6;">r</span>
+            <span style="--i:7;">e</span>
+          </span>
+        </h1>
+      </div>
+    </div>
+  </foreignObject>
 </svg>
